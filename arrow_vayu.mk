@@ -10,10 +10,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common ArrowOS configuration.
 $(call inherit-product, vendor/arrow/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# ArrowOS additions.
+TARGET_FACE_UNLOCK_SUPPORTED := true
+DEVICE_MAINTAINER := Moonlxgt0909 (MUHAMAD KHOIRON)
+
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
