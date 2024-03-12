@@ -28,7 +28,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_vayu
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_vayu
 
 # Kernel
-TARGET_KERNEL_CONFIG := vayu_user_defconfig
+TARGET_KERNEL_CONFIG := vayu_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
